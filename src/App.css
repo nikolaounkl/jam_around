@@ -1,0 +1,131 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.songs-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px !important;
+    min-width: 210px;
+    box-shadow: 0 0 10px #f8307a;
+    padding: 0 !important;
+    transition: all 0.2s ease-in-out;
+}
+
+.jam-img {
+    max-width: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+    .box {
+        flex-direction: column-reverse;
+    }
+
+    .jam-img {
+        max-width: 250px !important;
+    }
+}
+
+.content {
+    padding: 20px;
+    margin: 0 !important;
+    min-width: 250px;
+}
+
+i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+h2 {
+    margin-top: 10px !important;
+}
+
+.button-bar {
+    display: flex;
+    align-items: center;
+}
+
+.is-jam {
+    background: #f8307a !important;
+    color: #f7f7f7 !important;
+    transition: all 0.2s ease-in-out;
+    font-weight: bold;
+    min-width: 120px;
+    box-shadow: 0 0 5px #08a9eb !important;
+    border: none !important;
+}
+
+.is-jam:hover {
+    background: #08a9eb !important;
+    box-shadow: 0 0 5px #f8307a !important;
+}
+
+.is-jam:focus {
+    border: none !important;
+    outline: none !important;
+}
+
+.is-jam:active {
+    box-shadow: none !important;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit !important;
+}
+
+.has-text-jam {
+    color: #f8307a;
+}
+
+.has-text-jam-secondary {
+    color: #08a9eb !important;
+}
+
+.pagination-link {
+    border-color: #f8307a !important;
+    background: #f8307a !important;
+    box-shadow: 0 0 5px #f8307a !important;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.pagination-link:focus,
+.pagination-link:hover {
+    border-color: #08a9eb !important;
+    background: #08a9eb !important;
+    box-shadow: 0 0 5px #f8307a !important;
+}
+
+.pagination-list {
+    justify-content: center !important;
+    margin-top: 20px;
+}
+
+.icon {
+    transition: all 0.2s ease-in-out;
+}
+
+.icon:hover {
+    color: #f8307a;
+}
+
+.comment-wrapper {
+    max-width: 700px;
+}
