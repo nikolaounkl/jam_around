@@ -15,9 +15,16 @@ function App() {
                 <div className="hero-body">
                     <div className="container has-text-centered">
                         <Switch>
-                            <Route path="/" exact component={Main} />
-                            <Route path="/songs" exact component={Songs} />
-                            <Route path="/songs/:id/comments" component={Comments} />
+                            <Route path="/jam_around" exact component={Main} />
+                            <Route
+                                path="/jam_around/songs"
+                                exact
+                                component={Songs}
+                            />
+                            <Route
+                                path="/jam_around/songs/:id/comments"
+                                component={Comments}
+                            />
                             <Route component={NotFound} />
                         </Switch>
                     </div>

@@ -7,7 +7,7 @@ const Navbar = () => {
             <header className="navbar">
                 <div className="container">
                     <div className="navbar-brand">
-                        <Link to="/" className="navbar-item">
+                        <Link to="/jam_around/" className="navbar-item">
                             <img src="jam_logo.png" alt="Logo" />
                         </Link>
                     </div>

@@ -9,7 +9,7 @@ const LikeButton = ({ likesNum, songId }) => {
     });
 
     // A quick fix for my local environment to take care the issue with cors policy block
-    const proxyurl = "http://cors-anywhere.herokuapp.com/";
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
     const handleClick = e => {
         e.preventDefault();
@@ -20,7 +20,7 @@ const LikeButton = ({ likesNum, songId }) => {
         axios
             .post(
                 proxyurl +
-                    "http://api-stg.jam-community.com/interact/like?apikey=___agAFTxkmMIWsmN9zOpM_6l2SkZPPy21LGRlxhYD8&id=" +
+                    "https://api-stg.jam-community.com/interact/like?apikey=___agAFTxkmMIWsmN9zOpM_6l2SkZPPy21LGRlxhYD8&id=" +
                     likes.id
             )
             .then(res => console.log(res))

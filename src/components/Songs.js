@@ -13,12 +13,12 @@ const Songs = props => {
 
     useEffect(() => {
         // A quick fix for my local environment to take care the issue with cors policy block
-        const proxyurl = "http://cors-anywhere.herokuapp.com/";
+        const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
         const fetchSongs = async () => {
             setLoading(true);
             const res = await axios.get(
-                proxyurl + "http://api-stg.jam-community.com/song/trending"
+                proxyurl + "https://api-stg.jam-community.com/song/trending"
             );
             setSongs(res.data);
             setLoading(false);

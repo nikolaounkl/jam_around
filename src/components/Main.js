@@ -8,7 +8,7 @@ const Main = props => {
                 Check out our top trending songs
             </h2>
             <button className="button is-dark is-rounded is-jam">
-                <Link to="/songs">LOAD SONGS</Link>
+                <Link to="/jam_around/songs">LOAD SONGS</Link>
             </button>
         </>
     );

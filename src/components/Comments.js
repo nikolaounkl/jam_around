@@ -15,7 +15,7 @@ const Comments = props => {
     };
 
     // A quick fix for my local environment to take care the issue with cors policy block
-    const proxyurl = "http://cors-anywhere.herokuapp.com/";
+    const proxyurl = "https://cors-anywhere.herokuapp.com/";
 
     // Post data to be passed with the response
     const postData = {
@@ -29,7 +29,7 @@ const Comments = props => {
         axios
             .post(
                 proxyurl +
-                    "http://api-stg.jam-community.com/interact/like?apikey=___agAFTxkmMIWsmN9zOpM_6l2SkZPPy21LGRlxhYD8",
+                    "https://api-stg.jam-community.com/interact/like?apikey=___agAFTxkmMIWsmN9zOpM_6l2SkZPPy21LGRlxhYD8",
                 postData
             )
             .then(res => console.log(res))
@@ -39,7 +39,7 @@ const Comments = props => {
 
     return (
         <div className="comment-wrapper has-text-left">
-            <Link to="/songs">
+            <Link to="/jam_around/songs">
                 <span className="icon has-text-jam-secondary">
                     <i className="fas fa-arrow-circle-left fa-2x "></i>
                 </span>
